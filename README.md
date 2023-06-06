@@ -33,15 +33,4 @@ Trained objects : <br/>
  {'name': 'chitato', 'id': 18},
  {'name': 'chitato_lite', 'id': 19},
  {'name': 'club', 'id': 20}
- 
- 
- 
- 
-@misc{tensorflowmodelgarden2020,
-  author = {Hongkun Yu, Chen Chen, Xianzhi Du, Yeqing Li, Abdullah Rashwan, Le Hou, Pengchong Jin, Fan Yang,
-            Frederick Liu, Jaeyoun Kim, and Jing Li},
-  title = {{TensorFlow Model Garden}},
-  howpublished = {\url{https://github.com/tensorflow/models}},
-  year = {2020}
-}
 ```
