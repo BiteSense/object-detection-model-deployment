@@ -10,6 +10,8 @@ To setup :
 3. run the app => **docker run -p 8080:8080 (app_name)**
 <br/>
 **trained objects :** <br/>
+<br/> 
+
 ```
  {'name': 'abc_seduh', 'id': 1},
  {'name': 'aice_choco_crispy', 'id': 2},
