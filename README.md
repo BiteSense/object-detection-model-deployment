@@ -1,4 +1,4 @@
-# object-detection-model
+# Object Detection Model
 
 BiteSense app object detection model. Created using Tensorflow Object Detection API. <br/>
 <br/>
