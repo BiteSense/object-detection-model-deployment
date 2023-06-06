@@ -9,7 +9,7 @@ To setup :
 2. build the docker image to setup the environment dependencies => **docker build -t (app_name) .**
 3. run the app => **docker run -p 8080:8080 (app_name)**
 <br/>
-### trained object
+trained object
 ```
 [{'id': 1, 'name': 'abc_seduh'},
  {'id': 2, 'name': 'aice_choco_crispy'},
