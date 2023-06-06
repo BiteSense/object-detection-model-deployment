@@ -18,6 +18,7 @@ To setup :
   year = {2020}
 }
 ```
+<br/>
 ```
 @misc{tensorflowmodelgarden2020,
   author = {Hongkun Yu, Chen Chen, Xianzhi Du, Yeqing Li, Abdullah Rashwan, Le Hou, Pengchong Jin, Fan Yang,
