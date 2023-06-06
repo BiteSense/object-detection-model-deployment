@@ -34,3 +34,5 @@ Trained objects : <br/>
  {'name': 'chitato_lite', 'id': 19},
  {'name': 'club', 'id': 20}
 ```
+
+<br/>
