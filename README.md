@@ -9,7 +9,7 @@ To setup :
 2. build the docker image to setup the environment dependencies => **docker build -t (app_name) .**
 3. run the app => **docker run -p 8080:8080 (app_name)**
 <br/>
-**trained objects :**
+**trained objects :** <br/>
 ```
  {'name': 'abc_seduh', 'id': 1},
  {'name': 'aice_choco_crispy', 'id': 2},
@@ -31,7 +31,7 @@ To setup :
  {'name': 'chitato', 'id': 18},
  {'name': 'chitato_lite', 'id': 19},
  {'name': 'club', 'id': 20}
-```
+``` <br/>
 <br/>
 ```
 @misc{tensorflowmodelgarden2020,
