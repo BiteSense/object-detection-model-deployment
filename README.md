@@ -3,6 +3,7 @@
 BiteSense app object detection model. Created using Tensorflow Object Detection API. <br/>
 <br/>
 The app takes an open source image using query params => **localhost/prediction?url=...** <br/>
+<br/>
 To setup : 
 1. clone this repo.
 2. build the docker image to setup the environment dependencies **docker build -t (app_name) .**
