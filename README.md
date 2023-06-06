@@ -8,6 +8,7 @@ To setup :
 1. clone this repo.
 2. build the docker image to setup the environment dependencies => **docker build -t (app_name) .**
 3. run the app => **docker run -p 8080:8080 (app_name)**
+<br/>
 
 ```
 @misc{tensorflowmodelgarden2020,
