@@ -18,11 +18,11 @@ filename = 'target_image.jpg'
 
 #     return {"filename": file.filename}
 
-@app.get("/prediction")
+@app.get('/prediction')
 async def predict(url : str):
-    urllib.request.urlretrieve('{}'.format(url), "assets/{}".format(filename))
+    urllib.request.urlretrieve('{}'.format(url), 'assets/{}'.format(filename))
     res = model_main.run('assets/{}'.format(filename))
-    json_response = JSONResponse(content={"text": res})
+    json_response = JSONResponse(content={'text': res})
     return FileResponse('assets/result.jpg'),json_response
   
 port = 8080
