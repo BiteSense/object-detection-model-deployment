@@ -1,6 +1,9 @@
 # object-detection-model
 
-BiteSense app object detection model. Created using Tensorflow object detection api from
+BiteSense app object detection model. Created using Tensorflow Object Detection API. <br/>
+<br/>
+Steps to setup : <br/>
+1. c
 take an open source image using query params => /prediction?url=...
 
 
