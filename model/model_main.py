@@ -104,7 +104,7 @@ def run(image_path):
         category_index,
         use_normalized_coordinates=True,
         max_boxes_to_draw=200,
-        min_score_thresh=.55,
+        min_score_thresh=.6,
         agnostic_mode=False,
         keypoints=keypoints,
         keypoint_scores=keypoint_scores,
@@ -121,7 +121,7 @@ def run(image_path):
   names=[]
   results=[]
   for i in range(len(classes)):
-    if detections['detection_scores'][0][i] > 0.55:
+    if detections['detection_scores'][0][i] > 0.6:
       names.append(classes[i])
     
   for name in names:
