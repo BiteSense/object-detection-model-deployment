@@ -1,80 +1,80 @@
 item { 
-	name:'abc_seduh'
+	name:'aice_choco_crispy'
 	id:1
 }
 item { 
-	name:'aice_choco_crispy'
+	name:'aice_strawberry_crispy'
 	id:2
 }
 item { 
-	name:'aice_histeria'
+	name:'aw_kaleng'
 	id:3
 }
 item { 
-	name:'aice_mochi'
+	name:'bebelac'
 	id:4
 }
 item { 
-	name:'aice_strawberry_crispy'
+	name:'chiki_balls'
 	id:5
 }
 item { 
-	name:'aice_sweet_corn'
+	name:'chitato'
 	id:6
 }
 item { 
-	name:'air_indomaret'
+	name:'happytos cornchips'
 	id:7
 }
 item { 
-	name:'aqua'
+	name:'indomie goreng'
 	id:8
 }
 item { 
-	name:'aw_kaleng'
+	name:'kopi kenangan'
 	id:9
 }
 item { 
-	name:'bearbrand'
+	name:'nabati'
 	id:10
 }
 item { 
-	name:'bebelac'
+	name:'oreo'
 	id:11
 }
 item { 
-	name:'better'
+	name:'pocari sweat'
 	id:12
 }
 item { 
-	name:'chacha'
+	name:'pop mie'
 	id:13
 }
 item { 
-	name:'chicchoc'
+	name:'regal'
 	id:14
 }
 item { 
-	name:'chiki_balls'
+	name:'roma'
 	id:15
 }
 item { 
-	name:'chil_kid'
+	name:'selamat'
 	id:16
 }
 item { 
-	name:'yeos'
+	name:'slai olai'
 	id:17
 }
 item { 
-	name:'chitato'
+	name:'tango chocolate'
 	id:18
 }
 item { 
-	name:'chitato_lite'
+	name:'ultramilk'
 	id:19
 }
 item { 
-	name:'club'
+	name:'yeos'
 	id:20
 }

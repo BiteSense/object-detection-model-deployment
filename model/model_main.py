@@ -64,12 +64,12 @@ def get_model_detection_function(model):
 
 def run(image_path):
   # Load pipeline config and build a detection model
-  configs = config_util.get_configs_from_pipeline_file('model/bitesense_export-v1/pipeline.config') 
+  configs = config_util.get_configs_from_pipeline_file('model/bitesense_export-v2/pipeline.config') 
   detection_model = model_builder.build(model_config=configs['model'], is_training=False)
 
   # Restore checkpoint
   ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-  ckpt.restore('model/bitesense_export-v1/checkpoint/ckpt-0').expect_partial()
+  ckpt.restore('model/bitesense_export-v2/checkpoint/ckpt-0').expect_partial()
 
   detect_fn = get_model_detection_function(detection_model)
 
@@ -104,12 +104,13 @@ def run(image_path):
         category_index,
         use_normalized_coordinates=True,
         max_boxes_to_draw=200,
-        min_score_thresh=.20,
+        min_score_thresh=.50,
         agnostic_mode=False,
         keypoints=keypoints,
         keypoint_scores=keypoint_scores,
         keypoint_edges=get_keypoint_tuples(configs['eval_config']),
         line_thickness=10,
+        skip_scores=True,
         )
   
   plt.axis('off')
@@ -120,7 +121,7 @@ def run(image_path):
   names=[]
   results=[]
   for i in range(len(classes)):
-    if detections['detection_scores'][0][i] > 0.2:
+    if detections['detection_scores'][0][i] > 0.50:
       names.append(classes[i])
     
   for name in names:
