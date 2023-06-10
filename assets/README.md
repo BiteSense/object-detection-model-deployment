@@ -1,1 +1,1 @@
-# created assets folder to store the image and the inference result.
+created assets folder to store the image and the inference result.
