@@ -8,15 +8,15 @@ import urllib.request
 app = FastAPI()
 filename = 'target_image.jpg'
 
-# @app.post("/image")
-# async def upload_file(file: UploadFile = File(...)):
+@app.post("/image")
+async def upload_file(file: UploadFile = File(...)):
 
-#     contents = await file.read() 
+    contents = await file.read() 
 
-#     with open('assets/{}'.format(filename), "wb") as f:
-#         f.write(contents)
+    with open('assets/{}'.format(filename), "wb") as f:
+        f.write(contents)
 
-#     return {"filename": file.filename}
+    return {"filename": file.filename}
 
 @app.get('/prediction')
 async def predict(url : str):
@@ -26,7 +26,8 @@ async def predict(url : str):
     return FileResponse('assets/result.jpg'),json_response
   
 @app.get('/image')
-async def view_image():
+async def predict():
+    model_main.run('assets/{}'.format(filename))
     return FileResponse('assets/result.jpg')
 
 port = 8080

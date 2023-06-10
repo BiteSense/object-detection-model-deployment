@@ -209,7 +209,7 @@ def draw_bounding_box_on_image(image,
               width=thickness,
               fill=color)
   #try:
-  font = ImageFont.truetype('model/Arial.ttf', 240)  #change the bbox font-size
+  font = ImageFont.truetype('model/Arial.ttf', 96)  #change the bbox font-size
   # except IOError:
   #   font = ImageFont.load_default()
 

@@ -11,7 +11,6 @@ RUN apt-get install -y protobuf-compiler python-pil python-lxml
 RUN pip install jupyter
 RUN cd model && git clone https://github.com/tensorflow/models.git models/ 
 RUN cp -f model/visualization_utils.py model/models/research/object_detection/utils/
-RUN rm -rf model/visualization_utils.py
 RUN cd model/models/research && protoc object_detection/protos/*.proto --python_out=. && cp object_detection/packages/tf2/setup.py ./ && python setup.py build && python setup.py install && python -m pip install .
 RUN cd model/models/research/slim && python -m pip install -e . 
 RUN export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
