@@ -25,6 +25,10 @@ async def predict(url : str):
     json_response = JSONResponse(content={'text': res})
     return FileResponse('assets/result.jpg'),json_response
   
+@app.get('/image')
+async def view_image():
+    return FileResponse('assets/result.jpg')
+
 port = 8080
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0',port=port)
