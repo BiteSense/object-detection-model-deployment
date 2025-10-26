@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest
+FROM tensorflow/tensorflow:2.12.0
 
 COPY . /app
 WORKDIR /app 
